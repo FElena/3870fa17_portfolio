@@ -8,25 +8,74 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
   </head>
-  <body id="indexpage">
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-<!-- start of main navigation-->
 
-<nav class="mainnavigation cell small-12">
-  <ul>
-         <li><a class="current"  href="index.html">home</a></li>
-         <li><a href="about.html">about me</a></li>
-         <li><a href="portfolio.html">portfolio</a></li>
-         <li><a href="landingpage.html">landingpage</a></li>
-         <li><a href="contact.html">contact me</a></li>
-  </ul>
-</nav>
+
+  <body id="indexpage">
+<!--<div class="grid-container">-->
+
+<!-- start of main navigation-->
+      <div class="grid-x grid-padding-x">
+        <nav class="mainnavigation cell small-12">
+          <ul class="vertical large medium-horizontal menu">
+            <li><a class="current" href="index.html"><i class="fi-list"></i> <span>Home</span></a></li>
+            <li><a href="about.html"><i class="fi-list"></i> <span>About Me</span></a></li>
+            <li><a href="portfolio.html"><i class="fi-list"></i> <span>Portfolio</span></a></li>
+            <li><a href="landingpage.html"><i class="fi-list"></i> <span>Landingpage</span></a></li>
+            <li><a href="contact.html"><i class="fi-list"></i> <span>Contact Me</span></a></li>
+          </ul>
+        </nav>
+      </div>
+<!-- end of main navigation-->
+<div class="background">
+  <div class="middle">
+    <!--<h1 class=comingsoon>COMING SOON</h1>-->
+    <h1> coming soon</h1>
+    <hr>
+    <p id="date" style="text-transform: none;font-size:20px"></p>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 1, 2017 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("date").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
+
+
+
 <!-- end of main navigation -->
 
 
-<div class="bigphoto cell small-12">
+<!-- <div class="bigphoto cell small-12">
   bigphoto
 
 </div>
@@ -48,7 +97,9 @@
 
 
       </div>
-  </div> <!--closes the container -->
+
+  </div>
+  -->
 
 
     <script src="js/vendor/jquery.js"></script>

@@ -8,13 +8,11 @@
 #landingpage .mainnavigation li:nth-child(3){background-color: yellow;}
 */
 
+/*.cell{border: 1px solid red}*/
 
-.goodday{text-align: center;}
-.cell{border: 1px solid red}
-
-.mainnavigation {padding: 8px;
+.mainnavigation {padding: 3px;
                 border-bottom: 1px solid silver;
-                padding-bottom: 10px;
+                padding-bottom: 5px;
 }
 .grid-padding-x {padding: 8px;}
 
@@ -44,45 +42,76 @@ img {
     margin: auto;
 }
 
-/*text change for large and small screen*/
-/*large screen*/
-
+/*aboutme page*/
+.aboutme{border-bottom: 1px solid silver;}
+.personality{border-bottom: 1px solid silver;}
 
 /* desktop version, screen is wider than 500px */
 @media only screen and (min-width: 500px){
   p{font-size: 24px;
+    }
+  h1{font-size: 50px;
     }
 }
 
 /*nav style*/
 nav ul {
     list-style-type: none; /* remove bullets */
-    margin: 0;
-    padding: 5px;
+    /*margin: 0;*/
+    /*padding: 20px;*/
     /*background-color: #CCBBD5;*/
     text-align:center;
     /*border-radius: 5px;*/
 }
 nav li {
     display: inline;
-    padding: 2px;
+    padding: 6px;
     text-transform: uppercase;
-    font-size: 8px;
+
 }
 nav a:link, nav a:visited{
   text-decoration:none;
   color: black;
   padding: 5px;
   margin: 0;
-  font-size: 8px;
+  font-size: 10px;
 }
 nav a:hover {
   background-color:	 #f2f2f2;
   text-decoration: none;
-  font-size: 8px;
+  font-size: 10px;
 }
 nav a.current{
   background-color:  #b3b3b3;
+}
+
+/*coming soon style*/
+body, html {
+   height: 100%;
+    margin: 0;
+}
+
+.background {
+    background-color:#4d4d4d;
+    height: 100%;
+    /*background-position: center;
+    background-size: cover;
+    position: relative;*/
+    text-transform: uppercase;
+    color: white;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
 }
 
 /*feedbackpage*/

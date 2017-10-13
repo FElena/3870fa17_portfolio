@@ -11,9 +11,20 @@
   </head>
   <body id="landingpage">
     <div class="grid-container">
-      <div class="grid-x grid-padding-x">
+        <div class="grid-x grid-padding-x">
+            <nav class="mainnavigation cell small-12">
 
-        <!--start of main navigation-->
+              <ul class="vertical large medium-horizontal menu">
+                <li><a href="index.html"><i class="fi-list"></i> <span>Home</span></a></li>
+                <li><a href="about.html"><i class="fi-list"></i> <span>About Me</span></a></li>
+                <li><a href="portfolio.html"><i class="fi-list"></i> <span>Portfolio</span></a></li>
+                <li><a class="current" href="landingpage.html"><i class="fi-list"></i> <span>Landingpage</span></a></li>
+                <li><a href="contact.html"><i class="fi-list"></i> <span>Contact Me</span></a></li>
+              </ul>
+
+            </nav>
+          </div>
+      <!-- <div class="grid-x grid-padding-x">
 
         <nav class="mainnavigation cell small-12">
 
@@ -24,41 +35,72 @@
                  <li><a href="contact.html">contact me</a></li>
           </ul>
         </nav>
-      </div>
+      </div> -->
         <!--end of main navigation-->
 
 <div class="grid-x grid-margin-x">
-        <div class="tshirt cell small-6 large-6">
-              <img src="img/tshirtmexican.jpg" alt="t-shirs with mexican pattern" style="width:50%">
+        <div class="tshirt cell small-12 large-6">
+              <!-- <img src="img/tshirtmexican.jpg" alt="t-shirs with mexican pattern" style="width:50%"> -->
+
+              <div class="orbit" role="region" aria-label="landingpage" data-orbit>
+              <div class="orbit-wrapper">
+                <div class="orbit-controls">
+                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                </div>
+
+                <ul class="orbit-container">
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="img/tshirtmexican.jpg" alt="black t-shirt with traditional mexican pattern">
+                      <figcaption class="orbit-caption"> Mexican pattern</figcaption>
+                    </figure>
+                  </li>
+
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="img/tshirtpolish.jpg" alt="black t-shirt with traditional polish pattern">
+                      <figcaption class="orbit-caption"> Polish pattern</figcaption>
+                    </figure>
+                  </li>
+
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="img/tshirtrussian.jpg" alt="black t-shirt with traditional russian pattern">
+                      <figcaption class="orbit-caption"> Russian pattern</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+
+              </div>
+
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              </nav>
+              </div>
+
         </div>
 
-        <div class="tshirt cell small-6 large-6">
-              <p>some info will be here</p>
-        </div>
-
-
-<p id="random"></p>
-
-<script>
-document.getElementById("random").innerHTML =
-Math.floor(Math.random() * 100) + 1;
-</script>
-
-
-</div>
 
 
     <!--<div class="grid-y grid-padding-x" style="height: 500px;">
     <div class=" title small-12 cell">Title</div>
   </div>-->
+<div class="tshirt cell small-12 large-6">
+  some info
+</div>
+
+</div>
+
+</div>
 
     <div class="grid-x grid-padding-x">
     <div class="info1 small-12 cell">info 1</div>
     </div>
 
-    <div class="grid-x grid-padding-x">
-    <div class="info2 small-12 cell">info 2</div>
-    </div>
+
 
     <div class="grid-x grid-padding-x">
     <div class=" gallery small-12 cell">Gallery</div>
