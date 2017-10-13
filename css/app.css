@@ -1,12 +1,105 @@
 
 /* selector {property: value} */
-nav {border: 1px solid red}
+/*nav {border: 1px solid red}*/
 
-#indexpage .mainnavigation li:nth-child(1){background-color: yellow;}
-#portfoliopage .mainnavigation li:nth-child(2){background-color: yellow;}
-#aboutpage .mainnavigation li:nth-child(3){background-color: yellow;}
+/*#indexpage .mainnavigation li:nth-child(1){background-color: yellow;}
+#portfoliopage .mainnavigation li:nth-child(3){background-color: yellow;}
+#contactpage .mainnavigation li:nth-child(4){background-color: yellow;}
+#landingpage .mainnavigation li:nth-child(3){background-color: yellow;}
+*/
 
+
+.goodday{text-align: center;}
 .cell{border: 1px solid red}
+
+.mainnavigation {padding: 8px;
+                border-bottom: 1px solid silver;
+                padding-bottom: 10px;
+}
+.grid-padding-x {padding: 8px;}
+
+.handwriting {font-family: 'Parisienne', cursive;
+               text-align: center;}
+
+h1, h2, h3, h4, h5, h6 {text-align: center;}
+
+.personality {text-align: center;}
+
+/* mobile first */
+body {
+    /*background: #CCBBD5;*/
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    /*body {padding: 5rem 1rem;
+    }*/
+}
+
+p{
+  font-size: 15px;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+}
+
+/*text change for large and small screen*/
+/*large screen*/
+
+
+/* desktop version, screen is wider than 500px */
+@media only screen and (min-width: 500px){
+  p{font-size: 24px;
+    }
+}
+
+/*nav style*/
+nav ul {
+    list-style-type: none; /* remove bullets */
+    margin: 0;
+    padding: 5px;
+    /*background-color: #CCBBD5;*/
+    text-align:center;
+    /*border-radius: 5px;*/
+}
+nav li {
+    display: inline;
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+nav a:link, nav a:visited{
+  text-decoration:none;
+  color: black;
+  padding: 5px;
+  margin: 0;
+  font-size: 8px;
+}
+nav a:hover {
+  background-color:	 #f2f2f2;
+  text-decoration: none;
+  font-size: 8px;
+}
+nav a.current{
+  background-color:  #b3b3b3;
+}
+
+/*feedbackpage*/
+/*.tealbg {background color: teal;}
+.buttomsuccess{background-color: green;}
+.feedbackform{padding: 100px;}
+
+
+
+
 /* main page */
 
-/* portfolio page */
+/*about page*/
+/*#aboutpage .mainnavigation li:nth-child(2){background-color: yellow;}
+
+
+/* portfolio page starts*/
+/*
+* {box-sizing:border-box}
+#portfoliopage{background-color: white;}
