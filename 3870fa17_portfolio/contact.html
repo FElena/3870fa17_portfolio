@@ -9,30 +9,101 @@
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
-  
+
   <body id="contactpage">
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
 <!-- start of main navigation-->
 
-<nav class="mainnavigation cell small-12">
+    <nav class="mainnavigation cell small-12">
         <ul>
          <li><a href="index.html">home</a></li>
          <li><a href="about.html">about me</a></li>
          <li><a href="portfolio.html">portfolio</a></li>
          <li><a class="current" href="contact.html">contact me</a></li>
         </ul>
-</nav>
+    </nav>
 <!-- end of main navigation -->
-
-<p> this is contact page</p>
       </div>
-  </div> <!--closes the container -->
+
+  <div class="insidecontainer">
+
+      <div class="goodday">
+      <p>some text here</p>
+      </div>
 
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+  <div class="grid-x grid-padding-x">
+
+    <form id="form1" name="form1" class=" cell large-6 small-12 feedbackform" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+          action="https://felena.wufoo.com/forms/zuwu61a1r5ne98/#public">
+
+    <header id="header" class="info">
+    <!--<h2 class="0">Feedback Form</h2>-->
+    <div class="0">Please leave your comments here.</div>
+  </header><ul>
+    <li id="foli1" class="notranslate      ">
+    <label class="desc" id="title1" for="Field1">
+    Your Name
+    </label>
+    <div>
+    <input id="Field1" name="Field1" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup=""       placeholder="Jane Doe" />
+    </div>
+    </li>
+    <li id="foli2" class="notranslate      ">
+    <label class="desc" id="title2" for="Field2">
+    Your Email
+    </label>
+    <div>
+    <input id="Field2" name="Field2" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup=""       placeholder="janejoe@email.com" />
+    </div>
+    </li>
+    <li id="foli3"
+    class="notranslate      "><label class="desc" id="title3" for="Field3">
+    Comments
+    </label>
+
+    <div>
+    <textarea id="Field3"
+    name="Field3"
+    class="field textarea medium"
+    spellcheck="true"
+    rows="10" cols="50"
+
+    tabindex="3"
+    onkeyup=""
+    placeholder="Tell me about how great I am."
+           ></textarea>
+
+    </div>
+    </li> <li class="buttons ">
+    <div>
+
+    <input id="saveForm" name="saveForm" class="buttomsuccess"
+        type="submit" value="Submit"
+     /></div>
+    </li>
+
+    <li class="hide">
+    <label for="comment">Do Not Fill This Out</label>
+    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+    <input type="hidden" id="idstamp" name="idstamp" value="0E/Gfi/n/rkEtA0grKMF2WSxSgKishQoQJ9q5dwZkhE=" />
+    </li>
+    </ul>
+    </form>
+
+    <div class="cell large-6 small-12 callout tealbg">
+      some content
+    </div>
+
+  </div>
+</div>
+</div><!--closes the container -->
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
