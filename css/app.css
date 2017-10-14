@@ -36,7 +36,6 @@ p{
   font-size: 15px;
 }
 
-
 img {
     display: block;
     margin: auto;
@@ -46,9 +45,64 @@ img {
 .aboutme{border-bottom: 1px solid silver;}
 .personality{border-bottom: 1px solid silver;}
 
-/* desktop version, screen is wider than 500px */
+
+/*landingpage*/
+.tshirtsubtitle h3{text-align: center;
+                   padding-top: 200px;
+                   font-family:'Raleway', sans-serif;
+                   font-weight: bold;
+                 }
+
+.tshirttitle h1{border-bottom: 1px solid silver;
+                padding: 30px;
+                font-family: 'Raleway', sans-serif;
+               }
+
+.container {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  /*font-size: 15px;*/
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+  .tshirtsubtitle h3{text-align: center;padding: 50px;
+  }
+
+  .tshirttitle h1{font-size: 20px; font-weight: bold;}
+
+  }
+
+
+/* font for desktop version, screen is wider than 500px */
 @media only screen and (min-width: 500px){
-  p{font-size: 24px;
+  p{font-size: 18px;
     }
   h1{font-size: 50px;
     }
@@ -115,20 +169,12 @@ hr {
 }
 
 /*feedbackpage*/
+.leavecomm {text-align: center;
+            font-family: 'Parisienne', cursive;
+            font-size: 23px;
+            padding: 20px;}
+.formbox {background-color: silver;}
+.buttomsuccess{background-color: darkgrey;}
+
 /*.tealbg {background color: teal;}
-.buttomsuccess{background-color: green;}
 .feedbackform{padding: 100px;}
-
-
-
-
-/* main page */
-
-/*about page*/
-/*#aboutpage .mainnavigation li:nth-child(2){background-color: yellow;}
-
-
-/* portfolio page starts*/
-/*
-* {box-sizing:border-box}
-#portfoliopage{background-color: white;}
